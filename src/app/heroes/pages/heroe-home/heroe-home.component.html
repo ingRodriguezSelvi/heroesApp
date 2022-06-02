@@ -36,7 +36,10 @@
       <mat-icon class="mat-18">menu</mat-icon>
     </button>
     <span class="spacer"></span>
-    <button mat-button>
+    <span>{{auth.usuario}}</span>
+    <button mat-button
+            (click)="logOut()">
+      <mat-icon class="mat-18">account_circle</mat-icon>
       Log Out
     </button>
  </mat-toolbar>
